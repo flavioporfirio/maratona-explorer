@@ -1,0 +1,66 @@
+:root {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+
+body {
+    font-family: bold, sans-serif;
+    background: linear-gradient(#be8fbe, #892e9b);
+    color: white;
+    overflow-y: hidden;
+
+}
+
+.body {
+    display: flex;
+    padding-block: 15rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.initial {
+    width: 40rem;
+    height: 40rem;
+    background-color: rgb(44, 44, 63);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+}
+
+
+img {
+    width: 45%;
+    height: auto;
+
+}
+
+h1 {
+    margin: 1rem 0;
+    ;
+}
+
+p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+input {
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+button {
+    background-color: #7f30db;
+    color: white;
+    border: none;
+}
+
+.caixa {
+    border-radius: 0.5rem;
+    width: 25rem;
+    height: 4rem;
+}
