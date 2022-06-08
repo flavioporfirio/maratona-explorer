@@ -1,66 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif
+}
+
 :root {
     font-size: 62.5%;
     /* 1rem = 10px */
 }
 
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 body {
-    font-family: bold, sans-serif;
-    background: linear-gradient(#be8fbe, #892e9b);
     color: white;
-    overflow-y: hidden;
+    background: linear-gradient(to left bottom, #1d0110, #141414, #030303, #19022c, #140324, #140324);
+    background-size: 300% 300%;
+    animation: colors 5s ease infinite;
 
 }
 
-.body {
+.container {
     display: flex;
-    padding-block: 15rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+    padding: 20rem;
 }
 
-.initial {
-    width: 40rem;
-    height: 40rem;
-    background-color: rgb(44, 44, 63);
+.caixa-conteudo {
+    width: 50rem;
+    height: 60rem;
+    background: rgba(25, 26, 39, 0.761);
+    gap: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 2rem;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(3px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 
-img {
+.caixa-conteudo img {
     width: 45%;
     height: auto;
-
+    margin-bottom: 4rem;
 }
 
 h1 {
-    margin: 1rem 0;
-    ;
+    font-size: 3rem;
+    opacity: 0.9;
 }
 
 p {
-    margin-bottom: 2rem;
-    font-size: 1rem;
-}
-
-input {
-    padding-left: 1rem;
-    margin: 1rem 0;
+    font-size: 1.5rem;
+    opacity: 0.7;
 }
 
 button {
     background-color: #7f30db;
     color: white;
     border: none;
+    transition: filter .2s;
 }
 
-.caixa {
+input,
+button {
     border-radius: 0.5rem;
-    width: 25rem;
-    height: 4rem;
+    width: 100%;
+    max-width: 25rem;
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+
+
+button:hover {
+    filter: brightness(1.2);
+    filter: contrast(180%);
+    cursor: pointer;
+
 }
