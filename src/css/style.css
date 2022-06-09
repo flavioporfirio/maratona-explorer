@@ -46,7 +46,6 @@ body {
 .caixa-conteudo {
     width: 50rem;
     height: 60rem;
-    background: rgba(25, 26, 39, 0.761);
     gap: 1rem;
     display: flex;
     flex-direction: column;
@@ -73,6 +72,7 @@ h1 {
 p {
     font-size: 1.5rem;
     opacity: 0.7;
+    margin-bottom: 1rem;
 }
 
 button {
@@ -85,10 +85,11 @@ button {
 input,
 button {
     border-radius: 0.5rem;
-    width: 100%;
-    max-width: 25rem;
+    width: 35rem;
+    height: 4rem;
     font-size: 2rem;
-    padding: 1.5rem;
+    text-align: center;
+    gap: 1rem;
 }
 
 
