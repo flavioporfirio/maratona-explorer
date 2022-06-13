@@ -23,7 +23,7 @@ const respostas = [
     "Sinais apontam que sim.",
 ]
 
-// clicar em fazer pergunta
+
 function fazerPergunta() {
 
     if (inputPergunta.value == "") {
@@ -35,7 +35,7 @@ function fazerPergunta() {
 
     const pergunta = "<div>" + inputPergunta.value + "</div>"
 
-    //gerar número aleatorio
+
     const totalRespostas = respostas.length
     const numeroAleatorio = Math.floor(Math.random() * totalRespostas)
 
@@ -43,7 +43,7 @@ function fazerPergunta() {
     elementoResposta.innerHTML = respostas[numeroAleatorio]
 
     elementoResposta.style.opacity = 1
-    //sumir a resposta depois de 3 segundos
+
     setTimeout(function () {
         elementoResposta.style.opacity = 0;
         buttonPerguntar.removeAttribute("disabled")
