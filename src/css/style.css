@@ -11,7 +11,7 @@
     /* 1rem = 10px */
 }
 
-@keyframes colors {
+/* @keyframes colors {
     0% {
         background-position: 0% 50%;
     }
@@ -23,13 +23,14 @@
     100% {
         background-position: 0% 50%;
     }
-}
+} */
 
 body {
     color: white;
-    background: linear-gradient(to left bottom, #1d0110, #141414, #030303, #19022c, #140324, #140324);
+    /* background: linear-gradient(to left bottom, #1d0110, #141414, #030303, #19022c, #140324, #140324); 
     background-size: 300% 300%;
-    animation: colors 5s ease infinite;
+    animation: colors 5s ease infinite; */
+    background: url(/src/imgs/5532919.jpg);
 
 }
 
@@ -98,4 +99,17 @@ button:hover {
     filter: contrast(180%);
     cursor: pointer;
 
+}
+
+#resposta {
+    margin-top: 3rem;
+
+    transition: opacity 1s;
+}
+
+#resposta div {
+    font-size: 1.6rem;
+    font-weight: normal;
+    opacity: 0.9;
+    margin-bottom: 1rem;
 }

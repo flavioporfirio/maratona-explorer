@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="text/javascript" src="/src/js/index.js" defer></script>
     <link rel="stylesheet" href="/src/css/style.css">
 </head>
 
@@ -16,10 +17,11 @@
                 alt="Imagem de uma bola de cristal">
             <h1>Vou revelar seu destino!</h1>
             <p> Clique em fazer pergunta para que seu destino seja revelado.</p>
-            <input type="text" placeholder="Digite sua pergunta" />
-            <button>Fazer Pergunta</button>
-        </div>
+            <input id="inputPergunta" type="text" placeholder="Digite sua pergunta" />
+            <button id="buttonPerguntar" onClick="fazerPergunta()">Fazer Pergunta</button>
 
+            <h3 id="resposta"></h3>
+        </div>
     </div>
 
 </body>
