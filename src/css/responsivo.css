@@ -1,6 +1,12 @@
-@media only screen and (max-width: 767px) and (min-width:480px) {
+@media only screen and (max-width: 767px) {
     body {
-        width: 50%;
+        width: 100%;
         margin-inline: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .caixa-conteudo {
+        width: 40rem;
     }
 }
