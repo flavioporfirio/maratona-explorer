@@ -5,11 +5,15 @@
 
 
 body {
+    width: 100vw;
+    height: 100vh;
+
     color: white;
     background-image: url(imgs/galaxia.jpg);
     background-repeat: no-repeat;
-    padding-top: 5rem;
+    background-size: cover;
 
+    padding-top: 5rem;
 }
 
 .container {
